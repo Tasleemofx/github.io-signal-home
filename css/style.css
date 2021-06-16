@@ -1,0 +1,20 @@
+#section1{
+    background: skyblue;
+    text-align: center;
+    padding: 1em;
+    padding-top: 8em;    
+}
+.logo{
+    width: 10vw;
+    height: 10vh;
+}
+#phone1{
+    width: 20vw;
+    height: 90vh;
+    transform: rotate(40deg);
+}
+#phone2{
+    width: 20vw;
+    height: 90vh;
+    transform: rotate(40deg);
+}
