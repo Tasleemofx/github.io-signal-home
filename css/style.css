@@ -1,20 +1,33 @@
 #section1{
     background: skyblue;
     text-align: center;
+    justify-content: center;
     padding: 1em;
-    padding-top: 8em;    
+    padding-top: 8em;
 }
 .logo{
     width: 10vw;
-    height: 10vh;
+    height: 5vh;
+}
+
+nav ul li{
+  display: inline-flex;
+  align-items: flex-end;
 }
 #phone1{
     width: 20vw;
     height: 90vh;
-    transform: rotate(40deg);
+    transform: rotate(30deg);
 }
 #phone2{
     width: 20vw;
     height: 90vh;
-    transform: rotate(40deg);
+    transform: rotate(30deg);
+}
+#quotes{
+  padding: 2rem;
+  background-color: lightgray;
+}
+.img-round{
+  border-radius: 50%;
 }

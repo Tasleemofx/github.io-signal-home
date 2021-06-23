@@ -8,89 +8,116 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/63ea3ca189.js" defer crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/signal.js" defer></script>
+
+        </script>
     <title>Signal</title>
 </head>
 <body>
     <div class="container-fluid">
-        <nav class="nav">
-            <img src="images/logo.png" class="logo"  alt="logo">
-            <ul class="nav">
+        <!--Bootstrap-->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="images/logo.png" class="logo"  alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                    <a href="#">Get Signal</a>
+                  <a class="nav-link active" aria-current="page" href="#">Get signal</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Support</a>
+                  <a class="nav-link active" href="#">Support</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Blog</a>
+                  <a class="nav-link active" href="#"> Developers</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Developers</a>
+                  <a class="nav-link active" href="#">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Careers</a>
+                  <a class="nav-link active" href="#">Careers</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#">Donate</a>
+                <li class="nav-item active">
+                  <a class="nav-link active" href="#">Donate</a>
                 </li>
-            </ul>
-            <div class="share">
-                <i class="fab fa-facebook-square fa-2x"></i>
-                <i class="fab fa-twitter-square fa-2x"></i>
-                <i class="fab fa-instagram fa-2x"></i>
+                    <li class="nav-item">
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </li>
+              </ul>
             </div>
+          </div>
         </nav>
 
         <main class="main">
             <section id="section1" class="row">
-                <div class="col-5">
+                <div class="col col-md-5">
                     <h1>Speak Freely</h1>
                     <p>Say "hello" to a different messaging experience.
                         An unexpected focus on privacy, combined with all of the features you expect.
                     </p>
                     <button class="btn btn-light btn-lg">Get Signal</button>
                 </div>
-                <div class="col-7">
+                <div class="col col-md-6">
                     <img src="images/phone1.png" id="phone1" alt="phone1">
                     <img src="images/phone2.png" id="phone2" alt="phone2">
                 </div>
             </section>
-            <section id="quotes">
-                <blockquote>
-                    <cite>"I use Signal every day."</cite>
-                    <h5>Edward Snowden</h5>
-                    <p>Whistleblower and privacy advocate</p>
+            <section id="quotes" class="row">
+                <blockquote class="col col-sm-6">
+                  <img src="images/snowden.jpg" alt="image-round" class="img-round">
+                    <cite>
+                      <p class="fw-bold">"I use Signal every day."</p>
+                      <h5>Edward Snowden</h5>
+                      <p>Whistleblower and privacy advocate</p>
+                  </cite>
                 </blockquote>
-                <blockquote>
-                    <cite>"I trust Signal because it's well built,
-                        but more importantly, because of how it's 
-                        built: open source, peer reviewed, and 
+                <blockquote class="col col-sm-6">
+                  <img src="images/dorsey.jpg" alt="image-round" class="img-round">
+                    <cite>
+                    <p class="fw-bold">"I trust Signal because it's well built,
+                        but more importantly, because of how it's
+                        built: open source, peer reviewed, and
                         funded entirely by grants and donations.
-                         A refreshing model for how critical services should be built."</cite>
-                    <h5>Jack Dorsey</h5>
-                    <p>CEO of Twitter and Square</p>
+                         A refreshing model for how critical services should be built."
+                       </p>
+                         <h5>Jack Dorsey</h5>
+                         <p>CEO of Twitter and Square</p>
+                  </cite>
                 </blockquote>
-                <blockquote>
-                    <cite>Signal is the most scalable encryption tool we have.
-                        It is free and peer reviewed. I encourage people to use it everyday."</cite>
-                    <h5>Laura Poitras</h5>
-                    <p>Oscar-winning filmmaker and journalist</p>
+                <blockquote class="col col-sm-6">
+                  <img src="images/poitras.jpg" alt="image-round" class="img-round">
+                    <cite>
+                        <p class="fw-bold">"Signal is the most scalable encryption tool we have.
+                        It is free and peer reviewed. I encourage people to use it everyday."</p>
+                        <h5>Laura Poitras</h5>
+                        <p>Oscar-winning filmmaker and journalist</p>
+                  </cite>
                 </blockquote>
-                <blockquote>
-                    <cite>"I am regularly impressed with the thought
+                <blockquote class="col col-sm-6">
+                  <img src="images/schneier.jpg" alt="image-round" class="img-round">
+                    <cite>
+                        <p class="fw-bold">"I am regularly impressed with the thought
                         and care put into both the security and the usability of this app.
-                        It's my first choice for an encrypted conversation."</cite>
-                    <h5>Bruce Schneier</h5>
-                    <p>Internationally renowned security technologist</p>
+                        It's my first choice for an encrypted conversation."</p>
+                        <h5>Bruce Schneier</h5>
+                        <p>Internationally renowned security technologist</p>
+                  </cite>
                 </blockquote>
             </section>
             <section>
                 <h1>Why use Signal</h1>
+                <p>Explore below to see why SIgnal is a simple, powerful and secure messenger</p>
             </section>
 
 
         </main>
     </div>
-    
+
 </body>
 </html>
