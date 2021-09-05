@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link href="css/bootstrap.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/63ea3ca189.js" defer crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/signal.js" defer></script>
+        <script type="text/javascript" src="js/bootstrap.js" defer></script>
 
         </script>
     <title>Signal</title>
@@ -16,7 +16,7 @@
 <body>
     <div class="container-fluid">
         <!--Bootstrap-->
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <nav class="navbar navbar-expand-sm navbar-light sticky-top bg-light p-2">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img src="images/logo.png" class="logo"  alt="logo">
@@ -24,10 +24,11 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Get signal</a>
+                  <a class="nav-link active" aria-current="page" href="#section1">Get signal</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" href="#">Support</a>
@@ -55,17 +56,17 @@
         </nav>
 
         <main class="main">
-            <section id="section1" class="row">
-                <div class="col col-md-5">
-                    <h1>Speak Freely</h1>
-                    <p>Say "hello" to a different messaging experience.
+            <section id="section1" class="row row-lg col-md">
+                <div class="col col-lg-5 row-md align-items-center">
+                    <h1 class="fw-bold">Speak Freely</h1>
+                    <p class="fw-bold">Say "hello" to a different messaging experience.
                         An unexpected focus on privacy, combined with all of the features you expect.
                     </p>
                     <button class="btn btn-light btn-lg">Get Signal</button>
                 </div>
-                <div class="col col-md-6">
-                    <img src="images/phone1.png" id="phone1" alt="phone1">
-                    <img src="images/phone2.png" id="phone2" alt="phone2">
+                <div class="col col-lg-8 row-md">
+                    <img src="images/phone1.png" class="phone"  alt="phone1">
+                    <img src="images/phone2.png" class="phone"  alt="phone2">
                 </div>
             </section>
             <section id="quotes" class="row">
@@ -113,6 +114,7 @@
             <section>
                 <h1>Why use Signal</h1>
                 <p>Explore below to see why SIgnal is a simple, powerful and secure messenger</p>
+                <input type="file" name="file" />
             </section>
 
 

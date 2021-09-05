@@ -4,6 +4,7 @@
     justify-content: center;
     padding: 1em;
     padding-top: 8em;
+    margin-bottom: -5em;
 }
 .logo{
     width: 10vw;
@@ -11,21 +12,17 @@
 }
 
 nav ul li{
-  display: inline-flex;
-  align-items: flex-end;
+  display: inline-block;
+  justify-content: space-between;
 }
-#phone1{
-    width: 20vw;
+.phone{
+    width: 15vw;
     height: 90vh;
-    transform: rotate(30deg);
-}
-#phone2{
-    width: 20vw;
-    height: 90vh;
-    transform: rotate(30deg);
+    transform: rotate(35deg);
 }
 #quotes{
-  padding: 2rem;
+  padding: 2em;
+  padding-top: 5rem;
   background-color: lightgray;
 }
 .img-round{
